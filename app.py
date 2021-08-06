@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
     return "Welcome to animea detection webapp"
 
-@app.route('/get-hemoglobin-result')
+@app.route('/get-hemoglobin-result',methods=['GET'])
 
 def hemobloginCalc():
     r= float(request.args.get('r'))
